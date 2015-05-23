@@ -17,8 +17,8 @@ curl -sSL https://get.rvm.io | bash -s -- --version 1.26.11
 source ~/.rvm/scripts/rvm
 
 echo "Installs Ruby"
-rvm install 2.2.1
-rvm use 2.2.1 --default
+rvm install 2.2.2
+rvm use 2.2.2 --default
 
 gem install bundler --no-rdoc --no-ri
 gem install rails --no-rdoc --no-ri
@@ -34,7 +34,7 @@ echo -n "Should be sqlite 3.8.1 or higher: sqlite "
 sqlite3 --version
 echo -n "Should be rvm 1.26.11:          "
 rvm --version | sed '/^.*$/N;s/\n//g' | cut -c 1-10
-echo -n "Should be ruby 2.2.1:                "
+echo -n "Should be ruby 2.2.2:                "
 ruby -v | cut -d " " -f 2
 echo -n "Should be Rails 4.2.1 or higher:         "
 rails -v
